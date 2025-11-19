@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauté Naturelle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Beauté Naturelle</h1>
+        <nav>
+            <a href="#produits">Produits</a>
+            <a href="#contact">Contact</a>
+            <a href="#panier">Panier (<span id="panier-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- SECTION PRODUITS -->
+    <section id="produits" class="container">
+        <h2>Nos Produits Naturels</h2>
+
+        <div class="produits-grid">
+
+            <!-- PRODUIT 1 -->
+            <div class="produit">
+                <img src="https://via.placeholder.com/250x250.png?text=Huile+Naturelle" alt="Huile naturelle">
+                <h3>Huile Éclat Naturelle</h3>
+                <p>Une phrase au hasard pour décrire le produit naturellement.</p>
+                <button onclick="ajouterPanier('Huile Éclat Naturelle')">Ajouter au panier</button>
+            </div>
+
+            <!-- PRODUIT 2 -->
+            <div class="produit">
+                <img src="https://via.placeholder.com/250x250.png?text=Crème+Bio" alt="Crème bio">
+                <h3>Crème Hydratante Bio</h3>
+                <p>Ici une phrase de description du produit, totalement provisoire.</p>
+                <button onclick="ajouterPanier('Crème Hydratante Bio')">Ajouter au panier</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PANIER -->
+    <section id="panier" class="container">
+        <h2>Votre Panier</h2>
+        <ul id="panier-list"></ul>
+    </section>
+
+    <!-- FORMULAIRE CONTACT -->
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <form>
+            <label>Nom :</label>
+            <input type="text" placeholder="Votre nom" required>
+
+            <label>Email :</label>
+            <input type="email" placeholder="Votre email" required>
+
+            <label>Message :</label>
+            <textarea placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
